@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 18th Birthday Siska</title>
+  <style>
+    body {
+      font-family: 'Courier New', cursive;
+      background: url('Icha.png') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .diary {
+      width: 80%;
+      max-width: 600px; /* batas maksimal agar bisa diperkecil kiri kanan */
+      background: rgba(255, 255, 255, 0.85);
+      padding: 60px;
+      border: 2px solid #d9c9a6;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      position: relative;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    .diary::before, .diary::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .diary::before { top: 40px; left: 40px; }
+    .diary::after { bottom: 20px; right: 20px; }
+
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 42px;
+      color: #d4749a;
+      margin-bottom: 10px;
+    }
+    
+    h3 {
+      color: #6d4c41;
+      margin-top: 0;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+    
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 24px;
+      color: #9c6b30;
+    }
+    
+    .date {
+      text-align: left;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    .btn-love {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #d4749a;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    
+    .btn-love:hover {
+      background: #c06386;
+      transform: scale(1.05);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="diary">
+    <div class="date">29 Agustus 2025</div>
+    <h1>Happy Sweet 18th, Siska Icha Zahrun Khasanah!</h1>
+    <h3>✨ Bab baru dalam hidupmu dimulai ✨</h3>
+    <p>
+      Dear Siska, <br><br>
+      Hari ini adalah halaman baru dalam diary kehidupanmu. Tepat di usiamu yang ke-18,
+      semoga semua doa terbaik tercurah untukmu. Semoga langkah-langkahmu selalu
+      dipenuhi kebahagiaan, rezeki yang luas, sahabat yang tulus, dan cinta yang
+      senantiasa menguatkanmu. Jadikan setiap detik perjalananmu sebagai cerita
+      indah yang kelak akan kau kenang.
+    </p>
+    <p>
+      Ingatlah, dunia ini luas, impianmu juga tak terbatas. Jangan takut bermimpi
+      tinggi, karena kamu pantas untuk meraihnya. 
+    </p>
+    <div class="signature">With love,<br> Azis Khoirul</div>
+
+    <!-- Tombol -->
+    <a href="Ucapan.html" target="_blank" class="btn-love">Klik di sini 💖</a>
+  </div>
+</body>
+</html>

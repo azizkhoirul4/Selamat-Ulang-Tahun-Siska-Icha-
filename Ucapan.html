@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Spesial</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #FFDCDC, #FFF2EB, #FFE8CD, #FFD6BA);
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 3em;
+      font-family: 'Cormorant Garamond', serif; /* gaya klasik */
+      margin: 0;
+    }
+    p {
+      font-size: 1.8em;
+      font-family: 'Dancing Script', cursive; /* diary style */
+      margin: 0;
+      line-height: 1.1;
+    }
+    .signature {
+      font-size: 1.5em;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+      line-height: 1;
+    }
+    .heart {
+      position: absolute;
+      bottom: 0;
+      font-size: 2em;
+      color: red;
+      animation: floatUp 5s linear infinite;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(0.8); opacity: 0; }
+      20% { opacity: 1; }
+      100% { transform: translateY(-100vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <h1>Happy 18th Birthday Icha</h1>
+    <p>Aku menyukaimu</p>
+    <p class="signature">~Azis Khoirul Setiawan~</p>
+  </div>
+
+  <script>
+    // Buat love acak muncul
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerText = ["❤️","💕","💖","💓","💞"][Math.floor(Math.random()*5)];
+      heart.style.left = Math.random() * 100 + "vw"; // posisi acak
+      heart.style.animationDuration = (3 + Math.random() * 4) + "s"; // durasi acak
+      heart.style.fontSize = (1 + Math.random() * 2) + "em"; // ukuran acak
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 7000);
+    }
+
+    setInterval(createHeart, 500); // tiap 0,5 detik muncul heart baru
+  </script>
+</body>
+</html>
